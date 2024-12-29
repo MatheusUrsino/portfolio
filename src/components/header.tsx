@@ -1,11 +1,9 @@
 'use client'
-import { links } from '@/lib/data'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 import { LinkLib } from '@/lib/types'
 import clsx from 'clsx'
 import { useActiveSectionContext } from '@/containers/active-section'
-import { span } from 'framer-motion/client'
 import { motion } from 'framer-motion'
 
 type HeaderProps = { links: LinkLib[] }

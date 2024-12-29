@@ -6,7 +6,6 @@ import Link from 'next/link'
 import { useActiveSectionContext } from '@/containers/active-section'
 import { AnimatePresence, motion } from 'framer-motion'
 import { LinkLib } from '@/lib/types'
-import { div } from 'framer-motion/client'
 
 type HamburguerMenuProps = { links: LinkLib[] }
 
