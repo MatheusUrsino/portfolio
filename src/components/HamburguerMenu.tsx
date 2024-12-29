@@ -51,7 +51,9 @@ const HamburguerMenu: React.FC<HamburguerMenuProps> = ({ links }) => {
                   'hover:bg-gray-950  hover:text-white rounded-2xl w-[80%] text-center m-2 p-2 dark:hover:bg-white dark:hover:text-gray-950',
                   {
                     'bg-gray-950 text-white rounded-2xl w-[80%] text-center m-2 p-2 dark:bg-white dark:text-gray-950':
-                      activeSection === linkLib.hash
+                      activeSection === linkLib.hash,
+                      "rounded-t-xl round": index === 0,
+                      "rounded-b-xl round": index === links.length - 1,
                   }
                 )}
                 key={linkLib.hash}

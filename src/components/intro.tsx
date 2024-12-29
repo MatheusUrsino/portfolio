@@ -82,8 +82,12 @@ export default function Intro() {
         className="flex sm:flex-row items center justify-center gap-4 px-4 text-lg font-medium"
       >
         <Link
-          href="#"
+          href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 dark:bg-white/10 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("#contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contato <Mail color={"#9ca3af"} />
         </Link>
